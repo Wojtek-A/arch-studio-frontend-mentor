@@ -1,0 +1,122 @@
+.page-name {
+  display: none;
+}
+.header {
+  margin: 32px auto;
+  width: 310px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &__logo {
+    width: 77px;
+    height: 32px;
+  }
+  &__hamburger {
+    width: 24px;
+    height: 17px;
+    cursor: pointer;
+  }
+}
+.navbar {
+  width: 343px;
+  height: 235px;
+  position: absolute;
+  top: -268px;
+  background-color: var(--VeryLightGrey);
+  transition: 0.5s;
+  &--active {
+    top: 64px;
+    z-index: 99;
+  }
+  &__menu {
+    margin: 39px auto auto 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  &__item,
+  :link,
+  :visited {
+    color: var(--VeryDarkGray);
+    font-family: $primaryfont;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-name {
+    display: flex;
+    gap: 48px;
+    position: absolute;
+    top: 117px;
+    left: -236px;
+    transform: rotate(90deg);
+    &__line {
+      margin-top: 8px;
+      height: 1px;
+      width: 104px;
+      background-color: var(--LightGrey);
+    }
+    &__text {
+      width: 225px;
+      color: var(--LightGrey);
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 18px;
+    }
+   }
+  .header {
+    margin: 60px auto;
+    width: 573px;
+    justify-content: flex-start;
+    gap: 79px;
+    &__logo {
+      width: 96px;
+      height: 40px;
+    }
+    &__hamburger {
+      display: none;
+    }
+  }
+  .navbar {
+    height: 20px;
+    position: unset;
+    background-color: var(--White);
+    &__menu {
+      margin: 0;
+      flex-direction: row;
+      gap: 0;
+    }
+    &__item,
+    :link,
+    :visited {
+      color: var(--MediumGrey);
+      font-size: 18px;
+      line-height: 25px;
+      &:hover {
+        color: var(--VeryDarkBlue);
+      }
+      &:nth-child(2) {
+        padding-left: 61px;
+      }
+      &:nth-child(3) {
+        padding-left: 51px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .page-name {
+    left: -277px;
+   }
+  .header {
+    margin: 60px auto;
+    width: 1110px;
+    gap: 95px;
+  }
+}

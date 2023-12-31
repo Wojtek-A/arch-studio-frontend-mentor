@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Arch Studio Website Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <script type="module" src="./js/menu.js"></script>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header">
+        <div class="page-name">
+          <div class="page-name__line"></div>
+          <p class="page-name__text">ABOUT US</p>
+        </div>
+        <svg class="header__logo">
+          <a class="header__logo" href="./index.html">
+            <use class="header__logo" href="./images/icons.svg#icon-logo" />
+          </a>
+        </svg>
+        <nav class="navbar">
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./about.html"> About Us</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <svg class="header__hamburger">
+          <use href="./images/icons.svg#icon-hamburger" />
+        </svg>
+      </div>
+    </header>
+    <main class="container">
+      <section class="about">
+        <div class="about__background"></div>
+        <h1 class="about__headline-big">About</h1>
+        <div class="about__line"></div>
+        <div class="about__text-box">
+          <h2 class="about__headline-small">Your team of professionals</h2>
+          <p class="about__text">
+            Our small team of world-class professionals will work with you every
+            step of the way. Strong relationships are at the core of everything
+            we do. This extends to the relationship our projects have with their
+            surroundings.
+          </p>
+        </div>
+      </section>
+      <section class="heritage">
+        <div class="heritage__line"></div>
+        <h2 class="heritage__headline">Our Heritage</h2>
+        <p class="heritage__text">
+          Founded in 2007, we started as a trio of architects. Our complimentary
+          skills and relentless attention to detail turned Arch into one of the
+          most sought after boutique firms in the country.
+        </p>
+        <p class="heritage__text">
+          Speciliazing in Urban Design allowed us to focus on creating
+          exceptional structures that live in harmony with their surroundings.
+          We consider every detail from every surrounding element to inform our
+          designs.
+        </p>
+        <p class="heritage__text">
+          Our small team of world-class professionals provides input on every
+          project.
+        </p>
+        <img
+          src="./images/image_heritage_desktop.jpg"
+          alt="building"
+          class="heritage__image"
+        />
+      </section>
+      <section class="leaders">
+        <h2 class="leaders__headline">The Leaders</h2>
+        <ul class="leaders__list">
+          <li class="leaders-list-item">
+            <img
+              src="./images/avatar_jake_desktop.jpg"
+              alt="Jake Richards"
+              class="leaders-list-item__image"
+            />
+            <svg
+              class="leaders-list-item__icon leaders-list-item__icon--linkedin"
+            >
+              <use href="./images/icons.svg#icon-linkedin" />
+            </svg>
+            <svg
+              class="leaders-list-item__icon leaders-list-item__icon--twitter"
+            >
+              <use href="./images/icons.svg#icon-twitter" />
+            </svg>
+            <h3 class="leaders-list-item__headline">Jake Richards</h3>
+            <p class="leaders-list-item__text">Chief Architect</p>
+          </li>
+          <li class="leaders-list-item">
+            <img
+              src="./images/avatar_thompson_desktop.jpg"
+              alt="Thompson Smith"
+              class="leaders-list-item__image"
+            />
+            <svg
+              class="leaders-list-item__icon leaders-list-item__icon--linkedin"
+            >
+              <use href="./images/icons.svg#icon-linkedin" />
+            </svg>
+            <svg
+              class="leaders-list-item__icon leaders-list-item__icon--twitter"
+            >
+              <use href="./images/icons.svg#icon-twitter" />
+            </svg>
+            <h3 class="leaders-list-item__headline">Thompson Smith</h3>
+            <p class="leaders-list-item__text">Head of Finance</p>
+          </li>
+          <li class="leaders-list-item">
+            <img
+              src="./images/avatar_jackson_desktop.jpg"
+              alt="Jackson Rourke"
+              class="leaders-list-item__image"
+            />
+            <svg
+              class="leaders-list-item__icon leaders-list-item__icon--linkedin"
+            >
+              <use href="./images/icons.svg#icon-linkedin" />
+            </svg>
+            <svg
+              class="leaders-list-item__icon leaders-list-item__icon--twitter"
+            >
+              <use href="./images/icons.svg#icon-twitter" />
+            </svg>
+            <h3 class="leaders-list-item__headline">Jackson Rourke</h3>
+            <p class="leaders-list-item__text">Lead Designer</p>
+          </li>
+          <li class="leaders-list-item">
+            <img
+              src="./images/avatar_maria_desktop.jpg"
+              alt="Maria Simpson"
+              class="leaders-list-item__image"
+            />
+            <svg
+              class="leaders-list-item__icon leaders-list-item__icon--linkedin"
+            >
+              <use href="./images/icons.svg#icon-linkedin" />
+            </svg>
+            <svg
+              class="leaders-list-item__icon leaders-list-item__icon--twitter"
+            >
+              <use href="./images/icons.svg#icon-twitter" />
+            </svg>
+            <h3 class="leaders-list-item__headline">Maria Simpson</h3>
+            <p class="leaders-list-item__text">Senior Architect</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+       <footer class="footer footer--contact container">
+      <a href="./index.html">
+        <svg class="footer__icon">
+          <use href="./images/icons.svg#icon-footer" />
+        </svg>
+      </a>
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a class="footer__list-text" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-text" href="./about.html">About Us</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-text" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <a href="./portfolio.html" class="footer__button">
+        See Our Portfolio
+        <svg class="footer__button-icon">
+          <use href="./images/icons.svg#icon-arrow" />
+        </svg>
+      </a>
+    </footer>
+  </body>
+</html>

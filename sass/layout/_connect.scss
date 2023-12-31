@@ -1,0 +1,129 @@
+.connect {
+  margin: 73px auto 0 auto;
+  width: 311px;
+  height: 493px;
+  &__headline {
+    width: 250px;
+    color: var(--VeryDarkBlue);
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.714px;
+  }
+}
+
+.connect-form {
+  margin: auto;
+  position: relative;
+  &__input,
+  &__message {
+    padding-left: 35px;
+    width: 311px;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px var(--VeryDarkBlue);
+    font-family: $primaryfont;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.312px;
+    &::placeholder {
+      color: var(--LightGrey);
+    }
+    &:focus {
+      border-bottom: solid 3px var(--VeryDarkBlue);
+    }
+  }
+  &__input {
+    margin-top: 18px;
+    height: 68px;
+    &--empty {
+      border-bottom: solid 1px var(--Red);
+      &::placeholder {
+        color: var(--Red);
+        opacity: 0.5;
+      }
+    }
+  }
+  &__message {
+    margin-top: 41px;
+    height: 94px;
+  }
+  &__input-info {
+    position: absolute;
+    right: 16px;
+    color: var(--Red);
+    font-weight: 700;
+    letter-spacing: -0.281px;
+    &--name {
+      top: 58px;
+    }
+    &--email {
+      top: 144px;
+    }
+    &--message {
+      top: 279px;
+    }
+  }
+  &__button {
+    margin: -4px auto 0 231px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--VeryDarkBlue);
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__button-icon {
+    width: 24px;
+    height: 18px;
+    stroke: var(--White);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connect {
+    margin-top: 190px;
+    width: 572px;
+    height: 470px;
+    &__headline {
+      width: 475px;
+      font-size: 72px;
+      line-height: 64px;
+      letter-spacing: -2px;
+    }
+  }
+  .connect-form {
+    margin-top: 17px;
+    &__input,
+    &__message {
+      width: 572px;
+    }
+    &__button {
+      margin-left: 492px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .connect {
+    margin-top: 124px;
+    width: 1110px;
+    height: 390px;
+    display: flex;
+    justify-content: space-between;
+    &__headline {
+      margin-top: 35px;
+    }
+  }
+  .connect-form {
+    margin: 0;
+    width: 730px;
+    &__input,
+    &__message {
+      width: 730px;
+    }
+    &__button {
+      margin-left: 650px;
+    }
+  }
+}

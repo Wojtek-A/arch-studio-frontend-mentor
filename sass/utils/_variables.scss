@@ -1,0 +1,27 @@
+$primaryfont: ('League Spartan', sans-serif);
+
+:root {
+  --VeryDarkBlue: #1b1d23;
+  --DarkGrey: #60636d;
+  --MediumGrey: #7d828f;
+  --LightGrey: #c8ccd8;
+  --VeryLightGrey: #eeeff4;
+  --Red: #df5656;
+  --Black: #000;
+  --White: #fff;
+}
+
+.dim {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  width: 100%;
+  height: max-content;
+  filter: brightness(50%);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none;
+}

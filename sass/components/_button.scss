@@ -1,0 +1,25 @@
+%button-text {
+  padding-top: 24px;
+  padding-left: 38px;
+  width: 252px;
+  height: 72px;
+  display: flex;
+  gap: 21px;
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--DarkGrey);
+  }
+  &:active {
+    background-color: var(--LightGrey);
+  }
+}
+%button-icon {
+  width: 26px;
+  height: 27px;
+  stroke: var(--White);
+}

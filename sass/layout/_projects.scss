@@ -1,0 +1,189 @@
+.projects {
+  margin: 74px auto 132px auto;
+  width: 311px;
+  &__headline {
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.714px;
+  }
+  &__list {
+    margin: 43px auto 0 auto;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+  &__button {
+    @extend %button-text;
+    margin: 24px auto 0 auto;
+    width: 311px;
+  }
+  &__button-icon {
+    @extend %button-icon;
+  }
+}
+.projects-list-item {
+  width: 311px;
+  height: 240px;
+  &--first {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_del_sol_mobile.jpg');
+  }
+  &--second {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_228b_mobile.jpg');
+  }
+  &--third {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_prototype_mobile.jpg');
+  }
+  &__headline {
+    padding-top: 153px;
+    padding-left: 24px;
+    color: var(--White);
+    font-size: 32px;
+    line-height: 40px;
+  }
+  &__text {
+    padding-left: 24px;
+    color: var(--White);
+    line-height: 24px;
+    opacity: 0.75;
+  }
+  &__number {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    margin: 207px auto 0 auto;
+    width: 573px;
+    position: relative;
+    &__headline {
+      font-size: 72px;
+      line-height: 64px;
+      letter-spacing: -2px;
+    }
+    &__list {
+      margin-top: 86px;
+    }
+    &__button {
+      width: 169px;
+      height: 72px;
+      position: absolute;
+      margin: 0;
+      top: -7px;
+      right: 0;
+    }
+  }
+  .projects-list-item {
+    width: 573px;
+    height: 240px;
+    position: relative;
+    &--first {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_del_sol_tablet.jpg');
+    }
+    &--second {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_228b_tablet.jpg');
+    }
+    &--third {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_prototype_tablet.jpg');
+    }
+    &__headline {
+      padding-top: 137px;
+      padding-left: 40px;
+    }
+    &__text {
+      padding-left: 40px;
+    }
+    &__number {
+      display: block;
+      position: absolute;
+      top: 28px;
+      right: 20px;
+      color: var(--White);
+      text-align: right;
+      font-size: 250px;
+      font-weight: 700;
+      line-height: 200px;
+      letter-spacing: -5px;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .projects {
+    width: 1110px;
+    &__list {
+      margin-top: 64px;
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+  .projects-list-item {
+    width: 350px;
+    height: 560px;
+    &--first {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_del_sol_desktop.jpg');
+    }
+    &--second {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_228b_desktop.jpg');
+    }
+    &--third {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_prototype_desktop.jpg');
+    }
+    &__headline {
+      padding-top: 457px;
+    }
+    &__text {
+      padding-left: 40px;
+    }
+    &__number {
+      top: 45px;
+      right: -10px;
+    }
+  }
+}

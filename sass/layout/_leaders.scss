@@ -1,0 +1,116 @@
+.leaders {
+  margin: 112px auto 0 auto;
+  width: 311px;
+  &__headline {
+    width: 155px;
+    color: var(--VeryDarkBlue);
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.714px;
+  }
+  &__list {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 79px;
+  }
+}
+.leaders-list-item {
+  &__image {
+    width: 311px;
+    height: 284px;
+    filter: brightness(90%);
+  }
+  &__headline {
+    margin-top: 12px;
+    color: var(--VeryDarkBlue);
+    font-size: 32px;
+    line-height: 40px;
+  }
+  &__text {
+    font-weight: 500;
+    line-height: 24px;
+    opacity: 0.75;
+  }
+  &__icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .leaders {
+    margin-top: 208px;
+    width: 573px;
+    &__headline {
+      width: 240px;
+      font-size: 72px;
+      line-height: 64px;
+      letter-spacing: -2px;
+    }
+    &__list {
+      width: 571px;
+      margin-top: 49px;
+      flex-direction: unset;
+      flex-wrap: wrap;
+      gap: 11px;
+      row-gap: 102px;
+    }
+  }
+  .leaders-list-item {
+    &__image {
+      width: 280px;
+      height: 256px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .leaders {
+    margin-top: 200px;
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    &__list {
+      width: 730px;
+      margin-top: 0;
+      gap: 30px;
+      row-gap: 62px;
+    }
+  }
+  .leaders-list-item {
+    position: relative;
+    width: 350px;
+    &__image {
+      width: 350px;
+      height: 320px;
+      position: absolute;
+      transition: 0.3s ease;
+      z-index: 3;
+      cursor: pointer;
+      &:hover,
+      :focus {
+        filter: brightness(50%);
+        z-index: 1;
+      }
+    }
+    &__icon {
+      width: 40px;
+      height: 40px;
+      display: block;
+      position: absolute;
+      top: 140px;
+      z-index: 2;
+      fill: var(--White);
+      cursor: pointer;
+      &--linkedin {
+        left: 119px;
+      }
+      &--twitter {
+        right: 119px;
+      }
+    }
+    &__headline {
+      margin-top: 332px;
+    }
+  }
+}

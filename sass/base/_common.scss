@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: $primaryfont;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  color: var(--VeryLightGrey);
+}
+h2,
+h3,
+h4 {
+  color: var(--VeryDarkBlue);
+}
+p {
+  color: var(--DarkGrey);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--VeryDarkBlue);
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 0 0 var(--White);
+}

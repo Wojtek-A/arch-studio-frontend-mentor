@@ -1,0 +1,107 @@
+.welcome {
+  margin: 72px auto 0 auto;
+  width: 311px;
+  height: 627px;
+  &__line {
+    width: 65px;
+    height: 1px;
+    background-color: var(--LightGrey);
+  }
+  &__headline-big {
+    display: none;
+  }
+  &__headline-small {
+    margin-top: 69px;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.714px;
+  }
+  &__text {
+    margin-top: 21px;
+    width: 304px;
+    line-height: 24px;
+  }
+  &__text-item:not(:first-child) {
+    margin-top: 24px;
+  }
+  &__image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .welcome {
+    margin-top: 89px;
+    width: 573px;
+    height: 570px;
+    position: relative;
+    &__line {
+      display: none;
+    }
+    &__headline-big {
+      display: unset;
+      position: absolute;
+      top: 0;
+      color: var(--VeryLightGrey);
+      font-size: 150px;
+      font-weight: 600;
+      line-height: 200px;
+      letter-spacing: 2px;
+    }
+    &__headline-small {
+      width: 446px;
+      margin-top: 0;
+      padding-top: 159px;
+      font-size: 72px;
+      line-height: 64px;
+      letter-spacing: -2px;
+    }
+    &__text {
+      margin-top: 43px;
+      width: 550px;
+      font-weight: 500;
+    }
+    &__text-item:not(:first-child) {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome {
+    margin-top: 91px;
+    width: 1110px;
+    height: 680px;
+    font-family: $primaryfont-bold;
+    &__headline-big {
+      font-size: 235px;
+      font-weight: 700;
+      letter-spacing: -15px;
+      z-index: 2;
+    }
+    &__headline-small {
+      padding-top: 175px;
+      padding-left: 190px;
+      width: 646px;
+      font-size: 70px;
+      letter-spacing: -5px;
+    }
+    &__text {
+      width: 440px;
+      margin-left: 190px;
+    }
+    &__text-item {
+      font-size: 17px;
+      &:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+    &__image {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      bottom: 7px;
+      right: 0;
+    }
+  }
+}

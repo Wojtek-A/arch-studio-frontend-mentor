@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Arch Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/projectDisplay.js"></script>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header">
+        <div class="page-name">
+          <div class="page-name__line"></div>
+          <p class="page-name__text">HOME</p>
+        </div>
+        <svg class="header__logo">
+          <a class="header__logo" href="./index.html">
+            <use class="header__logo" href="./images/icons.svg#icon-logo" />
+          </a>
+        </svg>
+        <nav class="navbar">
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./about.html"> About Us</a>
+            </li>
+            <li class="navbar__item">
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <svg class="header__hamburger">
+          <use href="./images/icons.svg#icon-hamburger" />
+        </svg>
+      </div>
+    </header>
+    <main class="container">
+      <section class="project">
+        <div class="project__background"></div>
+        <h2 class="project__headline">Project Paramour</h2>
+        <p class="project__text">
+          Project made for an art museum near Southwest London. Project Paramour
+          is a statement of bold, modern architecture.
+        </p>
+        <a href="./portfolio.html" class="project__button">
+          See Our Portfolio
+          <svg class="project__button-icon">
+            <use href="./images/icons.svg#icon-arrow" />
+          </svg>
+        </a>
+        <ul class="project__numbers-list">
+          <li class="project__number">
+            <p class="project__number-text project__number-text--active">01</p>
+          </li>
+          <li class="project__number">
+            <p class="project__number-text">02</p>
+          </li>
+          <li class="project__number">
+            <p class="project__number-text">03</p>
+          </li>
+          <li class="project__number">
+            <p class="project__number-text">04</p>
+          </li>
+        </ul>
+      </section>
+      <section class="welcome">
+        <div class="welcome__line"></div>
+        <h1 class="welcome__headline-big">Welcome</h1>
+        <h2 class="welcome__headline-small">Welcome to Arch Studio</h2>
+        <div class="welcome__text">
+          <p class="welcome__text-item">
+            We have a unique network and skillset to help bring your projects to
+            life. Our small team of highly skilled individuals combined with our
+            large network put us in a strong position to deliver exceptional
+            results.
+          </p>
+          <p class="welcome__text-item">
+            Over the past 10 years, we have worked on all kinds of projects.
+            From stations to high-rise buildings, we create spaces that inspire
+            and delight.
+          </p>
+          <p class="welcome__text-item">
+            We work closely with our clients so that we understand the
+            intricacies of each project. This allows us to work in harmony the
+            surrounding area to create truly stunning projects that will stand
+            the test of time.
+          </p>
+        </div>
+        <img
+          src="./images/image_welcome_desktop.jpg"
+          class="welcome__image"
+          alt="building"
+        />
+      </section>
+      <section class="ideas">
+        <div class="ideas__background"></div>
+        <h2 class="ideas__headline">Small team, big ideas</h2>
+        <a href="./about.html" class="ideas__button">
+          About Us
+          <svg class="ideas__button-icon">
+            <use href="./images/icons.svg#icon-arrow" />
+          </svg>
+        </a>
+      </section>
+      <section class="projects">
+        <h2 class="projects__headline">Featured</h2>
+        <ul class="projects__list">
+          <li class="projects-list-item projects-list-item--first">
+            <h3 class="projects-list-item__headline">Project Del Sol</h3>
+            <p class="projects-list-item__text">View All Projects</p>
+            <p class="projects-list-item__number">1</p>
+          </li>
+          <li class="projects-list-item projects-list-item--second">
+            <h3 class="projects-list-item__headline">228B Tower</h3>
+            <p class="projects-list-item__text">View All Projects</p>
+            <p class="projects-list-item__number">2</p>
+          </li>
+          <li class="projects-list-item projects-list-item--third">
+            <h3 class="projects-list-item__headline">Le Prototype</h3>
+            <p class="projects-list-item__text">View All Projects</p>
+            <p class="projects-list-item__number">3</p>
+          </li>
+        </ul>
+        <a href="./portfolio.html" class="projects__button">
+          See All
+          <svg class="projects__button-icon">
+            <use href="./images/icons.svg#icon-arrow" />
+          </svg>
+        </a>
+      </section>
+    </main>
+    <footer class="footer footer--contact container">
+      <a href="./index.html">
+        <svg class="footer__icon">
+          <use href="./images/icons.svg#icon-footer" />
+        </svg>
+      </a>
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a class="footer__list-text" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-text" href="./about.html">About Us</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-text" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <a href="./portfolio.html" class="footer__button">
+        See Our Portfolio
+        <svg class="footer__button-icon">
+          <use href="./images/icons.svg#icon-arrow" />
+        </svg>
+      </a>
+    </footer>
+  </body>
+</html>

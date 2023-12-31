@@ -1,0 +1,137 @@
+.your-project {
+  margin: auto;
+  width: 375px;
+  height: 505px;
+  position: relative;
+  &__line {
+    display: none;
+  }
+  &__background {
+    width: 375px;
+    height: 240px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_hero_phone_mobile.jpg');
+  }
+  &__headline-big {
+    display: none;
+  }
+  &__text-box {
+    width: 343px;
+    height: 310px;
+    position: absolute;
+    top: 195px;
+    background-color: var(--White);
+  }
+  &__headline-small {
+    margin: 66px auto 0 32px;
+    color: var(--VeryDarkBlue);
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.2px;
+  }
+  &__text {
+    margin: 20px auto 0 32px;
+    color: var(--DarkGrey);
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .your-project {
+    width: 573px;
+    height: 720px;
+    &__line {
+      width: 65px;
+      height: 1px;
+      display: block;
+      position: absolute;
+      top: 377px;
+      left: 118px;
+      z-index: 3;
+      background-color: var(--LightGrey);
+    }
+    &__background {
+      width: 573px;
+      height: 720px;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_hero_phone_tablet.jpg');
+    }
+    &__headline-big {
+      display: block;
+      position: absolute;
+      top: 204px;
+      right: 0;
+      color: var(--VeryLightGrey);
+      font-size: 150px;
+      font-weight: 700;
+      line-height: 200px;
+      letter-spacing: -3px;
+      z-index: 3;
+    }
+    &__text-box {
+      width: 515px;
+      height: 431px;
+      top: unset;
+      bottom: 0;
+      right: 0;
+    }
+    &__headline-small {
+      margin: 162px auto 0 60px;
+      font-size: 72px;
+      line-height: 64px;
+      letter-spacing: -2px;
+    }
+    &__text {
+      margin: 43px auto 0 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-project {
+    width: 1110px;
+    height: 720px;
+    &__line {
+      top: 377px;
+      left: 664px;
+    }
+    &__background {
+      width: 635px;
+      height: 720px;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_hero_phone_desktop.jpg');
+    }
+    &__headline-big {
+      top: 130px;
+      right: 4px;
+      font-size: 250px;
+      letter-spacing: -5px;
+    }
+    &__text-box {
+      width: 628px;
+      height: 503px;
+      top: 217px;
+      right: 0;
+    }
+    &__headline-small {
+      margin: 234px auto 0 182px;
+    }
+    &__text {
+      margin: 43px auto 0 182px;
+      width: 445px;
+    }
+  }
+}

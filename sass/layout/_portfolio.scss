@@ -1,0 +1,360 @@
+.portfolio {
+  margin: 88px auto 0 auto;
+}
+.portfolio-list {
+  margin: auto;
+  width: 311px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.portfolio-list-item {
+  width: 311px;
+  height: 240px;
+  &__headline {
+    padding-top: 153px;
+    padding-left: 24px;
+    color: var(--White);
+    font-size: 32px;
+    line-height: 40px;
+    &--seventh {
+      padding-top: 110px;
+    }
+  }
+  &__text {
+    padding-left: 24px;
+    color: var(--White);
+    line-height: 24px;
+    opacity: 0.75;
+  }
+  &--first {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_seraph_mobile.jpg');
+  }
+  &--second {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_eebox_mobile.jpg');
+  }
+  &--third {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_federal_mobile.jpg');
+  }
+  &--fourth {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_del_sol_mobile.jpg');
+  }
+  &--fifth {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_prototype_mobile.jpg');
+  }
+  &--sixth {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_228b_mobile.jpg');
+  }
+  &--seventh {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_edelweiss_mobile.jpg');
+  }
+  &--eighth {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_netcry_mobile.jpg');
+  }
+  &--ninth {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_hypers_mobile.jpg');
+  }
+  &--tenth {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_sxiv_mobile.jpg');
+  }
+  &--eleventh {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_trinity_mobile.jpg');
+  }
+  &--twelfth {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../images/image_paramour_mobile.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin-top: 0;
+  }
+  .portfolio-list {
+    width: 573px;
+  }
+  .portfolio-list-item {
+    width: 573px;
+    height: 240px;
+    &__headline {
+      padding-top: 137px;
+      padding-left: 40px;
+    }
+    &__text {
+      padding-left: 40px;
+    }
+    &--first {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_seraph_tablet.jpg');
+    }
+    &--second {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_eebox_tablet.jpg');
+    }
+    &--third {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_federal_tablet.jpg');
+    }
+    &--fourth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_del_sol_tablet.jpg');
+    }
+    &--fifth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_prototype_tablet.jpg');
+    }
+    &--sixth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_228b_tablet.jpg');
+    }
+    &--seventh {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_edelweiss_tablet.jpg');
+    }
+    &--eighth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_netcry_tablet.jpg');
+    }
+    &--ninth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_hypers_tablet.jpg');
+    }
+    &--tenth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_sxiv_tablet.jpg');
+    }
+    &--eleventh {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_trinity_tablet.jpg');
+    }
+    &--twelfth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_paramour_tablet.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .portfolio-list {
+    width: 1110px;
+    gap: 30px;
+    row-gap: 32px;
+  }
+  .portfolio-list-item {
+    width: 350px;
+    height: 560px;
+    &__headline {
+      padding-top: 457px;
+      padding-left: 40px;
+      &--seventh {
+        padding-top: 420px;
+      }
+    }
+    &__text {
+      padding-left: 40px;
+    }
+    &--first {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_seraph_desktop.jpg');
+    }
+    &--second {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_eebox_desktop.jpg');
+    }
+    &--third {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_federal_desktop.jpg');
+    }
+    &--fourth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_del_sol_desktop.jpg');
+    }
+    &--fifth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_prototype_desktop.jpg');
+    }
+    &--sixth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_228b_desktop.jpg');
+    }
+    &--seventh {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_edelweiss_desktop.jpg');
+    }
+    &--eighth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_netcry_desktop.jpg');
+    }
+    &--ninth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_hypers_desktop.jpg');
+    }
+    &--tenth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_sxiv_desktop.jpg');
+    }
+    &--eleventh {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_trinity_desktop.jpg');
+    }
+    &--twelfth {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0.01%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url('../images/image_paramour_desktop.jpg');
+    }
+  }
+}
