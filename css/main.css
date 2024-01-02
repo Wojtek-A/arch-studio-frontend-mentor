@@ -479,7 +479,7 @@ input:-webkit-autofill:active {
     letter-spacing: -2px;
   }
   .welcome__text {
-    width: 440px;
+    width: 445px;
     margin-left: 190px;
   }
   .welcome__text-item:not(:first-child) {
